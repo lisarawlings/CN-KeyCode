@@ -6,11 +6,40 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
     <title>Keycode Generator</title>
 </head>
-<body onkeydown="keycode(event)">
+<body id="page-wrapper">
     <div id="welcomepage">
-    <h1> Keycode Generator</h1>
-    <h2>Press any key to see the event keycode!</h2>
+    <div class="cards hide"></div>
+    <div class ="card item-key">
+    <div class ="card header">event.key</div>
+    <div class ="card main">
+    <div class ="main-description">key</div>
+        </div>
     </div>
+    <div class ="card item-location">
+        <div class="card header">event.location</div>
+    </div>
+    <div class ="card-main">
+        <div class="main-location">which</div>
+        </div>
+    </div>
+    <div class="card item-code">
+        <div class="card-header">event.code</div>
+        <div class ="card-main">
+            <div class="main-description">code</div>
+            </div>
+    </div>
+</div>
+
+    <div id="generator" class="showKeyCode">
+    <h1> Keycode Generator</h1>
+    <p>Press any key to see the event keycode!</p>
+    <input type = "text" onkeypress="keycode()">
+    <p id="keycode">Keycode</p>
+    </div>
+
+</div>
     
+   
+<script src="app.js"></script>
 </body>
 </html>
