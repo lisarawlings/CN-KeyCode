@@ -1,11 +1,12 @@
-const welcome = document.getElementById("welcomepage");
-const generator = document.getElementById("generator");
-const head = document.getElementById("keycode") 
+const key = document.getElementById("main-key");
+const which = document.getElementById("main-which");
+const code = document.getElementById("main-code");
 
-function keycode() {
-    var key = event.keycode;
+function keydownHandler(event) {
+    key.innerHTML=event.key;
+    which.innerHTML=event.which;
+    code.innerHTML=event.code;
 }
 
-document.addEventListener("keydown", function(event) {
-    console.log(event.which);
-})
+document.addEventListener("keydown", keydownHandler)
+
