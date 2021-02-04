@@ -11,9 +11,21 @@ h1 {
     padding-top: 20%;
 }
 
-h2 {
+p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25pt;
     text-align: center;
     color: rgb(182, 72, 167);
+}
+
+.flex-container .box {
+        background-color: pink;
+        width: 25%;
+        margin: 50px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        color: black;
+        float:left;
+        float:center;
 }
